@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Lets try using addEventLisener Method()</p>
+    <p>Lets click the click Me button</p>
+    <button id='demo'> Click Me!</button>
+    <script>
+        document.getElementById('demo').addEventListener("click",myFunc());
+        function myFunc(){
+            document.getElementById('demo').innerHTML="hello everyone"+"<br>"+"addEventListener method is used";
+        }
+    </script>
+    
+</body>
+</html>

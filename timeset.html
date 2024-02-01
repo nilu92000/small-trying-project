@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SetTimeout</title>
+</head>
+<body>
+    <input type="text" value="10" id="textBox"/></br> 
+      <input type="button" value="startTimer" onclick="startTimer()"/>
+    <input type="button" value="stoptTimer" onclick="stoptTimer()"/>
+    <script>
+        function startTimer(){
+            var control=document.getElementById('textBox');
+            var sec=control.value;
+            sec=sec-1;
+            if(sec==0){
+                control.value="done";
+                return;
+            }
+            else{
+                control.value=sec;
+
+            }
+
+        
+        IntervalID=setTimeout(startTimer,1000);
+        }
+        function stoptTimer(){
+            clearTimeout(IntervalID);
+            
+        }
+    
+
+        
+    </script>
+
+    
+</body>
+</html>

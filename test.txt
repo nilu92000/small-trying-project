@@ -1,0 +1,2 @@
+ a long-range genomic foundation model with context lengths of up to 1 million tokens at single nucleotide resolution!
+organisms that went extinct more than ten thousand years ago, to reconstruct their phenotypic traits and evolution. Ancient DNA analyses can help understand the development of ancient human populations and how they migrated.

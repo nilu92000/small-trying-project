@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" id="askme" value="Ask Me"/>
+    <input type="button" id="get" value="click Me"/>
+    <script>
+        var a=window.prompt("please ask your question");
+        alert("I am sorry i dont know the answer");
+        var b=document.getElementById('get');
+        b.onclick=change();
+        function change(){
+            document.body.style.backgroundColor='red';
+        }
+    </script>
+</body>
+</html>

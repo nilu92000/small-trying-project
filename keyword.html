@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<form name="genral">
+    KeyBord:<input type="text" id="keyd"><br/><br/>
+    Enter your name:<input type="text" id="fname">
+
+
+
+<body>
+    <form name="genral">
+        KeyBord:<input type="text" id="keyd"><br/><br/>
+        Enter your name:<input type="text" id="fname">
+</form>  
+<script>
+    var kd=document.getElementById("keyd");
+    kd.addEventListener('keydown',f1,false);
+    function f1(){
+        alert("You pressed a key inside the input field");
+    }
+    document.getElementById("fname").addEventListener("keyup",myFunction);
+    function myFunction()
+    {
+        var x=document.getElementById("fname");
+        x.value=x.value.toUpperCase();
+    
+
+    }
+</script>  
+    
+</body>
+</html>

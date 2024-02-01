@@ -1,0 +1,128 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: black;
+
+}
+.wrapper
+{
+    height: 500px;
+    width: 500px;
+    position: relative;
+}
+
+.wrapper img
+{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    margin: -50px;
+
+    
+}
+.wrapper label
+{
+
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    
+}
+.wrapper label span
+{
+    color: #fff;
+    font-size: 20px;
+     text-transform:uppercase;
+     display: block;
+     border: 2px solid;
+     width: 180px;
+     height: 50px;
+     border-radius:5px ;
+     text-align: center;
+     line-height: 48px;
+     cursor: pointer;
+     transition: all 0.3s ease;
+}
+.wrapper label span:before
+{
+content:"Turn Off";
+
+}
+.wrapper label span:hover
+{
+    background-color: #fff;
+    color: black;
+}
+.wrapper img#on
+{
+opacity: 0;
+animation: glow 3s linear infinite;
+transform: rotate(1deg);
+}
+@keyframes glow
+ {
+    0%
+    {
+        opacity: 1;
+    }
+    5%
+    {
+        opacity: 1;
+    }
+    70%
+    {
+        opacity: 1;
+    }
+    74%
+    {
+        opacity: 0;
+    }
+    80%
+    {
+        opacity: 1;
+    }
+   
+   84%
+    {
+        opacity: 0;
+    }
+    90%
+    {
+        opacity: 1;
+    }
+    100%
+    {
+        opacity: 1;
+    }
+   
+   
+   
+   
+   
+   
+}
+#btn:checked ~ img#on
+{
+    animation: none;
+}
+
+#btn:checked ~ label span:before
+{
+content: "Turn On";
+
+}
+.wrapper input{
+    display: none;
+}
+

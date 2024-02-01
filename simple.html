@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>implicit and Ecplicit type conversion</title>
+</head>
+<body>
+    <script>
+        //implicit type conversion
+        //numeric string to string type
+        let num;
+        num="4"+2;
+        console.log(num);
+        num="5"+true;
+        console.log(num)
+        //non numeric string -,+,*,/ : output not number
+        num1="hello"-"world";
+        num2='4'-'hello'
+        console.log(num1)
+        console.log(num2);
+        //boolean true=1,false=0
+        let num3;
+        num3='3'-true;
+        console.log(num3);
+        //explicit conversion
+        let num4
+        num4=Number('345');
+        console.log(num4);
+        let num5;
+        num5=Number(true);
+        console.log(num5);
+        
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
